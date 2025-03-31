@@ -1,0 +1,65 @@
+Understand the basic of java:
+
+1) Data Type(Int, float, char, etc)
+2) Conditional Statements (if-else, switch)
+3) Loops (for, while, do-while)
+4) Functions/Methods
+5) Classes and Objects
+
+
+>>>>> Work on Problem-Solving Strategies:
+
+1) Read a problem statement carefully: Understand What the input is, and what output is expected.
+2) Break the point into smaller parts: Divide the problem into logic steps or functions.
+3) Pseudocode : Before Writing actual code, try writing pseudocode or using flowcharts to plan your approach.
+
+
+>>>>> Practice Algorithmic Thinking:
+
+1) Focus on fundamental algorithms that improve logic:
+@- Sorting (Bubble Sort, Selection Sort, etc)
+@- Searching (Linear Search, Binary Search)
+@- Recursion (Factorial, Fibonacci Series)
+@- Basic String manipulation and array operations.
+
+
+>>>>> Work on Data Structure:
+
+1) Familiarity with data structure will improve logic:
+
+Array and ArrayLists
+Linked Lists
+Stacks and Queues
+HashMaps (Dictionaries)
+Trees and Graphs
+
+ Using Coding platforms:
+
+ * LeetCode
+ * Hackerrank
+ * Codeforces
+ * GeeksforGeeks
+
+
+ Start With easy problems and your logic improved move on to medium and hard level.
+ Focus on Correctness and Optimizing your solution.
+
+>>>> Learn Debugging and Testing
+
+ User print statement or Java debugger to track code's execution.
+ Test your code with various inputs especially edge cases.
+
+
+>>>> Understand Time space and Complexity
+
+
+>>>> Build Small projects
+
+ Create a simple calculator.
+ Build a to-do list application
+ Develop a gam like Tic-Tac-Toe
+ Implement a library management system.
+
+
+
+

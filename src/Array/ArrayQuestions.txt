@@ -1,0 +1,26 @@
+Find the smallest number in an array.
+Find the largest number in an array.
+FInd the second-smallest number and second-largest elements in an array.
+Reverse a given array.
+Count the frequency of each element in an array.
+Rearrange the array in increasing-decreasing order.
+Calculate the sum of the elements of the array.
+Rotate an array by K elements - block Swap algorithm
+Find the average of all the elements in an array.
+Remove duplicates in sorted array.
+Remove duplicates in unsorted array.
+Add an element in an array.
+Find all repeating elements in an array.
+Find all non-repeating elements in an array.
+Find all symmetric pairs in an array.
+Find maximum product subarray in an array
+Replace it element of array by it is rank
+Sort the elements of an array by frequency.
+Rotation of an elements an array (left and right)
+Find the circular rotation of an array.
+Search for an element in an array.
+Check if an array is a subset of another array or not.
+
+Concepts
+-TO print a incremental array + 1 we need to write code inside loop as (arr[i] = arr[i] + 1;)
+

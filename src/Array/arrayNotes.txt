@@ -1,0 +1,49 @@
+Basic Array Operations:
+
+Array Declaration Initialization and Access.
+Modifying elements in an array.
+Finding length of an array.
+
+Traversing Arrays:
+
+Using for loops to iterate over array.
+Using enhanced for loops (For each loop)
+
+Multi dimensional Arrays:
+
+Declaring and Initializing 2D arrays.
+Accessing and Modifying elements in 2D arrays.
+Traversing a 2D array.
+
+
+Array Sorting & Searching:
+Sorting array using Arrays.sort()
+Searching array using Array.binarySearch()
+Implementing Linear search and Binary search Algorithms.
+
+
+Array Utility methods:
+
+
+Common array Algorithms:
+
+Array Challenges:
+ Remove Duplicates from an Array.
+ Merge Two Array.
+ Move Zeros to end
+ Find Missing Numbers in an Array (If elements are consecutive)
+
+
+ Array Manipulation Techniques:
+ Shifting Elements (left/right)
+ Swapping elements in arrays
+ Spitting and Concatenating arrays.
+
+ Error Handling:
+ Handing ArrayIndexOutBoundsException
+ Validating input for array Size and Indexing.
+
+
+ Introduction to Dynamic Arrays:
+ Understanding the Limitations of Fixed size Arrays
+ Introduction to ArrayList and Comparison with Arrays.
