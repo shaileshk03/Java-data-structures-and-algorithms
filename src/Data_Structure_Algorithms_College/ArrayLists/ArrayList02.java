@@ -1,4 +1,4 @@
-package Data_Structure_Algorithms_College.ARRAY_LIST;
+package Data_Structure_Algorithms_College.ArrayLists;
 
 import java.util.ArrayList;
 import java.util.Collections;

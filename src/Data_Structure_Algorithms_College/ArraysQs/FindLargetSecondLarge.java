@@ -5,7 +5,7 @@ package Data_Structure_Algorithms_College.ArraysQs;
  */
 public class FindLargetSecondLarge {
 
-    // program is basically to clear the concept to get the largest, second largest
+    // program is basically to clear the concept to get the largest, second largest and third-largest numbers
     public int thirdMax(int[] nums) {
         long firstLargest = Long.MIN_VALUE;
         long secondLargest = Long.MIN_VALUE;
@@ -32,10 +32,49 @@ public class FindLargetSecondLarge {
         //return (int) (secondLargest != Long.MIN_VALUE ? secondLargest : firstLargest);
         //return (int) (firstLargest != Long.MIN_VALUE ? firstLargest : firstLargest);
     }
+
+    // Find Smallest Number in array
+    // @param int[] numbers - short form as nums
+    public static int findSmallestNum(int[] nums){
+        // Let's assume  number is Max possible value
+        int smallest_num = Integer.MAX_VALUE;
+        // Iterate over all the elements in numbers array
+        for(int num: nums){
+            if(num < smallest_num){
+                // update the Largest number value
+               smallest_num = num;
+            }
+        }
+        return smallest_num;
+    }
+
+    // Find Largest Number in array
+    // @param int[] numbers short form as nums
+    public static int findLargest(int[] nums){
+        // Let's assume number is Min possible value
+        int largest_num = Integer.MIN_VALUE;
+        // Iterate over all the elements in numbers array
+        for(int num: nums){
+            // Check if each number is greater than the element if found
+            if(num > largest_num){
+               // update the Largest number value
+               largest_num = num;
+            }
+        }
+        // Return the Largest number
+      return largest_num;
+    }
+
+
     public static void main(String[] args) {
         int[] numbers = {5, 13, 41, 88, 99, 77};
         FindLargetSecondLarge largetSecondLarge = new FindLargetSecondLarge();
-        int max_third = largetSecondLarge.thirdMax(numbers);
+        /*int max_third = largetSecondLarge.thirdMax(numbers);
         System.out.println(max_third);
+        */
+
+        int smallest = findSmallestNum(numbers);
+        int largest = findLargest(numbers);
+        System.out.println(largest);
     }
 }

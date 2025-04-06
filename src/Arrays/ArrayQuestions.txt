@@ -1,6 +1,4 @@
-Find the smallest number in an array.
-Find the largest number in an array.
-FInd the second-smallest number and second-largest elements in an array.
+FInd the smallest, largest, second-smallest number and second-largest number in an array.
 Reverse a given array.
 Count the frequency of each element in an array.
 Rearrange the array in increasing-decreasing order.
