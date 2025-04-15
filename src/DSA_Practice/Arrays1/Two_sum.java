@@ -1,4 +1,4 @@
-package Coding_Questions;
+package DSA_Practice.Arrays1;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;

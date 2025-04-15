@@ -1,24 +1,25 @@
-FInd the smallest, largest, second-smallest number and second-largest number in an array.
-Reverse a given array.
-Count the frequency of each element in an array.
-Rearrange the array in increasing-decreasing order.
-Calculate the sum of the elements of the array.
-Rotate an array by K elements - block Swap algorithm
-Find the average of all the elements in an array.
-Remove duplicates in sorted array.
-Remove duplicates in unsorted array.
-Add an element in an array.
-Find all repeating elements in an array.
-Find all non-repeating elements in an array.
-Find all symmetric pairs in an array.
-Find maximum product subarray in an array
-Replace it element of array by it is rank
-Sort the elements of an array by frequency.
-Rotation of an elements an array (left and right)
-Find the circular rotation of an array.
-Search for an element in an array.
-Check if an array is a subset of another array or not.
+Q1. Find the smallest, largest, second-smallest number and second-largest number in an array. -> DONE
+Q2. Reverse a given array. -> DONE
+Q3. Count the frequency of each element in an array.
+Q4. Rearrange the array in increasing-decreasing order.
+Q5. Calculate the sum of the elements in the array.
+Q6. Rotate an array by K elements - block Swap algorithm
+Q7. Find the average of all the elements in an array.
+Q8. Remove duplicates in sorted array.
+Q9. Remove duplicates in unsorted array.
+Q10. Add an element in an array.
+Q11. Find all repeating elements (duplicates) in an array.
+Q12. Find all non-repeating elements in an array.
+Q13. Find all symmetric pairs in an array.
+Q14. Find maximum product subarray in an array
+Q15. Replace it element of array by it is rank
+Q16. Sort the elements of an array by frequency.
+Q17. Rotation of an elements an array (left and right)
+Q18. Find the circular rotation of an array.
+Q19. Search for an element in an array.
+Q20. Check if an array is a subset of another array or not.
+
+All Question which has been solved are marked status as -DONE, can be found under path-src\Data_Structure_Algorithms_College\ArraysQs
 
 Concepts
--TO print a incremental array + 1 we need to write code inside loop as (arr[i] = arr[i] + 1;)
 
