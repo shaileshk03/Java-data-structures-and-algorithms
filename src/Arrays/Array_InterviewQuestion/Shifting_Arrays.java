@@ -21,7 +21,7 @@ public class Shifting_Arrays {
     public static void rightShift(int[] arr, int rightShifts){
         int[] temp = new int[arr.length];
         for (int i = 0; i < arr.length; i++){
-            // It will give us right spot to shit element based on remainder
+            // It will give us the right spot to a shit element based on a remainder
             int newPostion = (i + rightShifts) % arr.length;
             temp[newPostion] = arr[i];
         }
@@ -33,7 +33,7 @@ public class Shifting_Arrays {
 
     public static void leftShift(int[] arr, int leftShifts){
         int[] temp = new int[arr.length];
-        // shifting will be done from end to start so loop will run opposite
+        // shifting will be done from end to start so the loop will run opposite
         for (int i = arr.length-1; i >= 0; i--){
             int newPosition = (i + (arr.length - leftShifts)) % arr.length;
             temp[newPosition] = arr[i];

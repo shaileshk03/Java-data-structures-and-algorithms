@@ -5,7 +5,7 @@ package Data_Structure_Algorithms_College.ArraysQs;
  */
 public class FindLargetSecondLarge {
 
-    // program is basically to clear the concept to get the largest, second largest and third-largest numbers
+    // the program is basically to clear the concept to get the largest, second largest and third-largest numbers
     public int thirdMax(int[] nums) {
         long firstLargest = Long.MIN_VALUE;
         long secondLargest = Long.MIN_VALUE;
@@ -33,7 +33,7 @@ public class FindLargetSecondLarge {
         //return (int) (firstLargest != Long.MIN_VALUE ? firstLargest : firstLargest);
     }
 
-    // Find Smallest Number in array
+    // Find the Smallest Number in array
     // @param int[] numbers - short form as nums
     public static int findSmallestNum(int[] nums){
         // Let's assume  number is Max possible value
@@ -48,7 +48,7 @@ public class FindLargetSecondLarge {
         return smallest_num;
     }
 
-    // Find Largest Number in array
+    // Find the Largest Number in array
     // @param int[] numbers short form as nums
     public static int findLargest(int[] nums){
         // Let's assume number is Min possible value
