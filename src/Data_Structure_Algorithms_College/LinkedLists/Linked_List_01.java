@@ -108,6 +108,43 @@ public class Linked_List_01 {
        return val;
     }
 
+    // Iterative Search
+    public int IterSearch(int key){
+       Node temp = head;
+       int i = 0;
+
+       while (temp != null){
+           if(temp.data == key){
+              return i;
+           }
+          temp = temp.next;
+          i++;
+       }
+
+       // key not found
+       return i--;
+    }
+
+
+    // helper function
+    public int helperFun(Node head, int key){
+       if(head == null){
+           return -1;
+       }
+       if(head.data == key){
+           return 0;
+       }
+
+       int idx = helperFun(head.next, key);
+       if(idx ==-1){
+         return -1;
+       }
+
+       return idx+1;
+    }
+    public int RecSearch(int key){
+       return helperFun(head, key);
+    }
 
     public static void main(String[] args) {
         Linked_List_01 ls = new Linked_List_01();
