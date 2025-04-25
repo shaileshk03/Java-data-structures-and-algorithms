@@ -1,4 +1,4 @@
-package Data_Structure_Algorithms_College.ArraysQs;
+package Data_Structure_Algorithms_College.Arrays;
 
 import java.util.HashSet;
 

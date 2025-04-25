@@ -108,6 +108,31 @@ public class Linked_List_01 {
        return val;
     }
 
+    // Remove Last
+    public int removeLast(){
+       if(size == 0){
+           System.out.println("LL is empty");
+           return Integer.MIN_VALUE;
+       } else if (size == 1){
+           int val = head.data;
+           head = tail = null;
+           size = 0;
+           return val;
+       }
+
+       // prev (second last) = i size-2
+        Node prev = head;
+        for (int i = 0; i<size-2; i++){
+           prev = prev.next;
+        }
+
+        int val = prev.next.data; // tail data
+        prev.next = null;
+        tail = prev;
+        size--;
+        return val;
+    }
+
     // Iterative Search
     public int IterSearch(int key){
        Node temp = head;
@@ -146,6 +171,22 @@ public class Linked_List_01 {
        return helperFun(head, key);
     }
 
+    // Reverse LinkedList
+    public void reverseLinkedList(){
+      Node prev = null;
+      Node current = tail = head;
+      Node next;
+
+      while (current != null){
+          next = current.next;
+          current.next = prev;
+          prev = current;
+          current = next;
+      }
+      // update head
+     head = prev;
+   }
+
     public static void main(String[] args) {
         Linked_List_01 ls = new Linked_List_01();
         ls.addFirst(2);
@@ -157,7 +198,9 @@ public class Linked_List_01 {
         ls.print();
         System.out.println("Size of LinkedList is : " + ls.size);
 
-        ls.removeFirst();
+        ls.removeLast();
+        ls.print();
+        ls.reverseLinkedList();
         ls.print();
     }
 }

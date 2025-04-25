@@ -1,4 +1,4 @@
-package Data_Structure_Algorithms_College.ARRAY2D;
+package Data_Structure_Algorithms_College.ARRAY_2D;
 
 
 /**
