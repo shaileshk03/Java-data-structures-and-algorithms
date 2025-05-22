@@ -42,7 +42,7 @@ public class Move_ArrayElements {
     }
 
 
-    // Second approcach
+    // Second approach
     public static void moveAllZeroToEnd(int[] arr){
         int count = 0;
 

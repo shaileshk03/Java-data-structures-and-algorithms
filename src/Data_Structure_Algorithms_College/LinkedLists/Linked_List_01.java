@@ -1,7 +1,5 @@
 package Data_Structure_Algorithms_College.LinkedLists;
 
-import java.awt.*;
-
 /**
  * @author Shailesh
  */
@@ -187,20 +185,66 @@ public class Linked_List_01 {
      head = prev;
    }
 
+   public void deleteNthFromEnd(int n){
+       // calculate size
+       int size = 0;
+       // temp pointing to head
+       Node temp = head;
+
+       while(temp != null){
+         temp = temp.next;
+           size++;
+       }
+
+       if(n == size){
+        head = head.next; // Remove first
+        return;
+       }
+
+       // size-n
+       int i = 1;
+       int iTOFind = size - n;
+       Node prev = head;
+
+       while(i < iTOFind){
+         prev = prev.next;
+         i++;
+       }
+
+       prev.next = prev.next.next;
+       return;
+   }
+
+   //Find the Middle of the LinkedList (slow fast approach)
+   public Node findMid(Node head){
+       Node slow = head;
+       Node fast = head;
+
+       while(fast != null && fast.next != null){
+         slow = slow.next; // 1
+         fast = fast.next.next; // 2
+       }
+      return slow; // slow is my midNode
+   }
+
     public static void main(String[] args) {
         Linked_List_01 ls = new Linked_List_01();
         ls.addFirst(2);
         ls.addFirst(1);
         ls.addLast(3);
         ls.addLast(4);
+        ls.addLast(5);
         ls.add(2, 3);
 
         ls.print();
         System.out.println("Size of LinkedList is : " + ls.size);
 
-        ls.removeLast();
-        ls.print();
-        ls.reverseLinkedList();
+        //ls.removeLast();
+        //ls.print();
+        //ls.reverseLinkedList();
+        //ls.print();
+
+        ls.deleteNthFromEnd(3);
         ls.print();
     }
 }
