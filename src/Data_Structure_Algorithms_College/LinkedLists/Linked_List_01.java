@@ -227,6 +227,40 @@ public class Linked_List_01 {
       return slow; // slow is my midNode
    }
 
+   public boolean checkPalindrome(){
+       if(head == null || head.next == null){
+           return true;
+       }
+
+       // step1 - Find middle
+        Node midNode = findMid(head);
+
+       // step2 - reverse 2nd half
+        Node prev = null;
+        Node current = midNode;
+        Node next;
+
+        while (current != null){
+            next = current.next;
+            current.next = prev;
+            prev = current;
+            current = next;
+        }
+
+        Node right = prev;
+        Node left = head;
+
+        // step3 - check left half and right half
+       while (right != null){
+           if(left.data != right.data){
+             return false;
+           }
+          left = left.next;
+          right = right.next;
+       }
+     return true;
+   }
+
     public static void main(String[] args) {
         Linked_List_01 ls = new Linked_List_01();
         ls.addFirst(2);
