@@ -1,4 +1,4 @@
-package Data_Structure_Algorithms_College.BACKTRACKING;
+package Data_Structure_Algorithms_College.BACK_TRACKING;
 
 /**
  * @author Shailesh

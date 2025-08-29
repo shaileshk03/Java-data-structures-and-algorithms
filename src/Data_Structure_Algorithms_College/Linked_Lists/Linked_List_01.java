@@ -1,4 +1,4 @@
-package Data_Structure_Algorithms_College.LinkedLists;
+package Data_Structure_Algorithms_College.Linked_Lists;
 
 /**
  * @author Shailesh

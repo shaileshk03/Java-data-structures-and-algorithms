@@ -7,7 +7,7 @@ public class Bubble_Sorting {
 
     // It works well with large datasets
     // where the items are almost sorted because it takes only one iteration to detect whether the list is sorted or not.
-    // This algorithm is fastest on an extremely small or nearly sorted set of data.
+    // This algorithm is fastest on an tiny or nearly sorted set of data.
 
     public static void bubbleSorting(int[] arr){
 
@@ -53,7 +53,7 @@ public class Bubble_Sorting {
 
             // Loop will run till the last two elements in last.
             for (int j = 0; j < arr.length-1-i; j++){
-                // this condition will reverse the array to desending order
+                // this condition will reverse the array to descending order
                 if (arr[j] < arr[j+1]){
                     temp = arr[j];
                     arr[j] = arr[j+1];
