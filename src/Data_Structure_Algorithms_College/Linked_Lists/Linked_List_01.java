@@ -261,6 +261,60 @@ public class Linked_List_01 {
      return true;
    }
 
+   private Node getMid(Node head){
+    Node slow = head;
+    Node fast = head.next;
+
+    while(fast != null && fast.next != null){
+     slow = slow.next;
+     fast = fast.next.next;
+    }
+    return slow;
+   }
+
+   private Node merge(Node head1, Node head2){
+     Node mergeLL = new Node(-1);
+     Node temp = mergeLL;
+
+     while (head1 !=null && head2 !=null){
+         if(head1.data <= head2.data){
+           temp.next = head1.next;
+           head1 = head1.next;
+           temp = temp.next;
+         } else {
+             temp.next = head2.next;
+             head2 = head2.next;
+             temp = temp.next;
+         }
+     }
+     while (head1 != null){
+         temp.next = head1.next;
+         head1 = head1.next;
+         temp = temp.next;
+     }
+
+     while (head2 != null){
+         temp.next = head2.next;
+         head2 = head2.next;
+         temp = temp.next;
+     }
+     return mergeLL.next;
+   }
+
+   public Node mergeSort(Node head){
+       // Base Case
+       if(head == null || head.next == null){
+         return head;
+       }
+
+       Node mid = getMid(head);
+       Node rightHead = mid.next;
+       mid.next = null;
+       Node newLeft = mergeSort(head);
+       Node newRight = mergeSort(rightHead);
+       return merge(newLeft, newRight);
+   }
+
     public static void main(String[] args) {
         Linked_List_01 ls = new Linked_List_01();
         ls.addFirst(2);
@@ -268,6 +322,13 @@ public class Linked_List_01 {
         ls.addLast(3);
         ls.addLast(4);
         ls.addLast(5);
+
+        //merge sort
+        ls.print();
+        ls.head = ls.mergeSort(ls.head);
+        ls.print();
+
+        //
         ls.add(2, 3);
 
         ls.print();
@@ -280,5 +341,7 @@ public class Linked_List_01 {
 
         ls.deleteNthFromEnd(3);
         ls.print();
+
+
     }
 }
