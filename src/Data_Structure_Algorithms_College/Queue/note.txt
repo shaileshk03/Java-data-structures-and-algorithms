@@ -1,0 +1,11 @@
+-- Circular Queue we have completed.
+
+Queue: FIFO, First in first out.
+
+Operation:
+
+Enque: Add o(1)
+
+Deque: Remove o(01)
+
+Peek: Front value o(01)

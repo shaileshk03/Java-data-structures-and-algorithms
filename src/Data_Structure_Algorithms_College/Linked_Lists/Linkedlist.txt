@@ -1,0 +1,40 @@
+Concept of LinkedList
+
+## Easy Problems ##
+Middle of a linked list
+
+Reverse a Linked List
+Reverse a Doubly Linked List
+Rotate a linked list
+Nth node from End
+Delete Last Occurrence
+Delete Middle
+Merge Alternate Positions
+Circular List Traversal
+Queue using Linked List
+Stack using singly linked list
+Pairwise Swap
+Count Occurrences
+
+## Medium Problems ##
+Detect Loop
+Length of the Loop
+Reverse in groups
+Intersection Point
+Delete without Head pointer
+Merge two sorted linked lists
+Sort a List of 0s, 1s and 2s
+Palindrome Linked List
+Remove all occurrences of a given list
+Split a Circular Linked List into two halves
+Pair Sum in Doubly Linked List
+Add two numbers represented by Linked lists
+Multiply two numbers represented by Linked Lists
+Swap Kth nodes from beginning and end
+Rotate Doubly linked list by N nodes
+Binary Tree to Doubly Linked List
+Linked List from a 2D matrix
+Reverse a Sublist
+Delete N nodes after M
+Rearrange a given linked list in-place
+Partition around a given value

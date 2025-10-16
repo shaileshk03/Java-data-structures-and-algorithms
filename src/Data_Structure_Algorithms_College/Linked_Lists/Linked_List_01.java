@@ -22,7 +22,7 @@ public class Linked_List_01 {
 
    // Add
    public void addFirst(int data){
-       // step1 create new node
+       // step1 create new node object using new keyword
         Node newNode = new Node(data);
         size++;
         if (head == null){
@@ -74,6 +74,7 @@ public class Linked_List_01 {
            return;
        }
 
+       // Node object created initialized data
       Node newNode = new Node(data);
        size++;
       Node temp = head;

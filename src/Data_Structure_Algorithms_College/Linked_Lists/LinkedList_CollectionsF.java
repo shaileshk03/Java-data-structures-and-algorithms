@@ -10,7 +10,7 @@ import java.util.LinkedList;
 public class LinkedList_CollectionsF {
 
     // Merge sort in Linked List, it also in Divide and Conquer.
-    // Concept are shown below in steps
+    // Concepts are shown below in steps
 
     // Find out the Middle of LinkedList
     // Note if there are odd numbers of elements in LinkedList let's say 3 - the first two will come under the first half.
