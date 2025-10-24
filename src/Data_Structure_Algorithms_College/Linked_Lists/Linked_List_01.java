@@ -213,11 +213,10 @@ public class Linked_List_01 {
        }
 
        prev.next = prev.next.next;
-       return;
    }
 
    //Find the Middle of the LinkedList (slow fast approach)
-   public Node findMid(Node head){
+   public static Node findMiddle(Node head){
        Node slow = head;
        Node fast = head;
 
@@ -234,7 +233,7 @@ public class Linked_List_01 {
        }
 
        // step1 - Find middle
-        Node midNode = findMid(head);
+        Node midNode = findMiddle(head);
 
        // step2 - reverse 2nd half
         Node prev = null;
@@ -264,6 +263,7 @@ public class Linked_List_01 {
 
    private Node getMid(Node head){
     Node slow = head;
+    // suppose there are 4 elements in linkedList it will point the 2nd element
     Node fast = head.next;
 
     while(fast != null && fast.next != null){
@@ -343,6 +343,12 @@ public class Linked_List_01 {
         ls.deleteNthFromEnd(3);
         ls.print();
 
-
+        // Find middle
+        Node get_mid = findMiddle(head);
+        if(get_mid != null){
+            System.out.println(" -> " + get_mid.data);
+        } else {
+            System.out.println("LL is empty");
+        }
     }
 }
